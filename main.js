@@ -21,3 +21,4 @@ function checkPhoneNumber() {
     document.getElementById("lucky_number").innerHTML = "Xin lỗi bạn không có trong danh sách khách mời, liên hệ ông Tống Nhật Minh 0858881398 để làm thủ tục check in";
   }
 }
+
