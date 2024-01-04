@@ -3,11 +3,6 @@ body {
   background-color: black;
 }
 
-.container {
-  width: 400px;
-  margin: 0 auto;
-}
-
 .title {
   color: yellow;
   font-size: 20px;
