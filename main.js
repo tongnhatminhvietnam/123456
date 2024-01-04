@@ -21,3 +21,4 @@ function closePopup() {
 
 // Gắn sự kiện click cho button "Nhận mã số may mắn"
 document.getElementById("submit").onclick = checkPhoneNumber;
+
