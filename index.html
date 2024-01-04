@@ -7,7 +7,7 @@
   <div class="container">
     <h1 class="title">Mã số may mắn</h1>
     <div class="input-group">
-      <input type="text" id="phone_number" placeholder="Nhập số điện thoại của bạn" class="input">
+      <input type="text" id="phone_number" placeholder="Nhập số điện thoại của bạn" class="input" style="color: black;">
       <button id="submit" class="button">Nhận mã số may mắn</button>
     </div>
   </div>
@@ -21,9 +21,9 @@
       var phoneNumber = document.getElementById("phone_number").value;
 
       // Kiểm tra số điện thoại và hiển thị mã số may mắn tương ứng
-      if (phoneNumber == "01234567891") {
+      if (phoneNumber == "012345678901") {
         document.getElementById("lucky_number").innerHTML = "1";
-      } else if (phoneNumber == "0123456789") {
+      } else if (phoneNumber == "1234567889") {
         document.getElementById("lucky_number").innerHTML = "2";
       } else {
         // Hiển thị popup với thông báo hỗ trợ
@@ -50,8 +50,11 @@
       document.querySelector(".container").style.display = "block";
     }
 
-    // Gắn sự kiện click cho button "đóng"
-    document.getElementById("close").onclick = closePopup;
+    // Đặt mặc định là hiển thị layer 1
+    document.querySelector(".container").style.display = "block";
+
+    // Chỉnh màu chữ thành màu đen ở trong input text
+    document.querySelector("#phone_number").style.color = "black";
   </script>
 </body>
 </html>
