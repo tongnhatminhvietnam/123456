@@ -10,6 +10,12 @@ function checkPhoneNumber() {
  // Hiển thị layer 2
  document.querySelector(".popup").style.display = "block";
  document.querySelector(".popup").style.zIndex = 1;
+ document.querySelector(".popup").style.backgroundColor = "#ffffff";
+ document.querySelector(".popup").style.color = "#333333";
+ document.querySelector(".popup").style.fontSize = "16px";
+ document.querySelector(".popup").style.fontFamily = "sans-serif";
+ document.querySelector(".popup").style.margin = "0 auto";
+ document.querySelector(".popup").style.padding = "20px";
 
  // Kiểm tra mã số may mắn
  if (phoneNumber.match(/^01234567891$/) || phoneNumber.match(/^0123456789$/)) {
