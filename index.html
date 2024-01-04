@@ -1,21 +1,20 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Lucky Number Game</title>
+  <title>Mã số may mắn</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Lucky Number Game</h1>
-        <label for="phoneNumber">Enter your phone number:</label>
-        <input type="text" id="phoneNumber" placeholder="Enter your phone number">
-        <button onclick="getLuckyNumber()">Get Lucky Number</button>
-        <div id="result"></div>
-    </div>
-
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>Mã số may mắn</h1>
+    <input type="text" id="phone_number" placeholder="Nhập số điện thoại">
+    <button id="submit">Kiểm tra</button>
+  </div>
+  <div class="popup">
+    <h2>Mã số may mắn của bạn là</h2>
+    <p id="lucky_number"></p>
+    <button id="close">Đóng</button>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
