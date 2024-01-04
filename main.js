@@ -9,6 +9,7 @@ function checkPhoneNumber() {
 
  // Hiển thị layer 2
  document.querySelector(".popup").style.display = "block";
+ document.querySelector(".popup").style.zIndex = 1;
 
  // Kiểm tra mã số may mắn
  if (phoneNumber.match(/^01234567891$/) || phoneNumber.match(/^0123456789$/)) {
