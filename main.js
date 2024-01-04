@@ -13,3 +13,7 @@ function checkPhoneNumber() {
 document.getElementById("submit").onclick = function() {
   checkPhoneNumber();
 };
+function showPopup() {
+  document.querySelector(".popup").style.display = "block";
+  document.querySelector(".popup").style.zIndex = 2;
+}
