@@ -7,9 +7,6 @@ function checkPhoneNumber() {
  // Hiển thị mã số may mắn
  document.getElementById("lucky_number").innerHTML = luckyNumber;
 
- // Hiển thị layer 2
- document.querySelector(".popup").style.display = "block";
-
  // Kiểm tra mã số may mắn
  if (phoneNumber.match(/^01234567891$/) || phoneNumber.match(/^0123456789$/)) {
   document.getElementById("lucky_number").innerHTML = "Mã số may mắn của bạn là " + luckyNumber;
