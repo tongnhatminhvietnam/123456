@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <title>Mã số may mắn</title>
- <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lucky Number</title>
+</head>
+
 <body>
- <div class="container">
-  <h1 class="title">Mã số may mắn</h1>
-  <div class="input-group">
-   <input type="text" id="phone_number" placeholder="Nhập số điện thoại của bạn" class="input" style="color: black;">
-   <button id="submit" class="button" onclick="checkPhoneNumber()">Nhận mã số may mắn</button>
-  </div>
- </div>
- <div class="popup" style="display: none; z-index: 1; background-color: #ffffff; color: #333333; font-size: 16px; font-family: sans-serif; margin: 0 auto; padding: 20px;">
-  <h2 class="title">Mã số may mắn của bạn là</h2>
-  <p id="lucky_number" class="text"></p>
-  <button id="close" class="button">Đóng</button>
- </div>
+    <div class="layer-1">
+        <label for="phoneNumber">Nhập số điện thoại:</label>
+        <input type="text" id="phoneNumber" placeholder="01234567891">
+        <button onclick="checkLuckyNumber()">Kiểm tra</button>
+    </div>
+
+    <div class="layer-2" id="resultLayer">
+        <p id="resultMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
