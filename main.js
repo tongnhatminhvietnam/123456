@@ -13,12 +13,12 @@ function checkPhoneNumber() {
   }
 
   // Kiểm tra mã số may mắn
-  if (luckyNumber === "1") {
-    document.getElementById("lucky_number").innerHTML = "Mã số may mắn của bạn là 1";
-  } else if (luckyNumber === "2") {
-    document.getElementById("lucky_number").innerHTML = "Mã số may mắn của bạn là 2";
+  if (phoneNumber.match(/^01234567891$/) || phoneNumber.match(/^0123456789$/)) {
+    document.getElementById("lucky_number").innerHTML = "Mã số may mắn của bạn là " + luckyNumber;
   } else {
     document.getElementById("lucky_number").innerHTML = "Xin lỗi bạn không có trong danh sách khách mời, liên hệ ông Tống Nhật Minh 0858881398 để làm thủ tục check in";
   }
-}
 
+  // Thêm thông tin về thời gian check-in
+  document.getElementById("time_check_in").innerHTML = "Thời gian check-in: 8h30 - 9h30";
+}
