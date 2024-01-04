@@ -1,26 +1,17 @@
-// Hàm xử lý sự kiện click của button "Nhận mã số may mắn"
-function checkPhoneNumber() {
- // Gọi hàm checkPhoneNumber() trong file Java
- var phoneNumber = document.getElementById("phone_number").value;
- var luckyNumber = Java.call("main.CheckPhoneNumber", phoneNumber);
+function checkLuckyNumber() {
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    var resultLayer = document.getElementById('resultLayer');
+    var resultMessage = document.getElementById('resultMessage');
 
- // Hiển thị mã số may mắn
- document.getElementById("lucky_number").innerHTML = luckyNumber;
+    if (phoneNumber === '01234567891') {
+        resultMessage.innerHTML = 'Mã số may mắn của bạn là 1.';
+    } else if (phoneNumber === '0123456789') {
+        resultMessage.innerHTML = 'Mã số may mắn của bạn là 2.';
+    } else if (phoneNumber === '') {
+        resultMessage.innerHTML = 'Vui lòng nhập số điện thoại.';
+    } else {
+        resultMessage.innerHTML = 'Xin lỗi, bạn vui lòng liên hệ anh Nhật Minh để được hỗ trợ.';
+    }
 
- // Hiển thị layer 2
- document.querySelector(".popup").style.display = "block";
- document.querySelector(".popup").style.zIndex = 1;
- document.querySelector(".popup").style.backgroundColor = "#ffffff";
- document.querySelector(".popup").style.color = "#333333";
- document.querySelector(".popup").style.fontSize = "16px";
- document.querySelector(".popup").style.fontFamily = "sans-serif";
- document.querySelector(".popup").style.margin = "0 auto";
- document.querySelector(".popup").style.padding = "20px";
-
- // Kiểm tra mã số may mắn
- if (phoneNumber.match(/^01234567891$/) || phoneNumber.match(/^0123456789$/)) {
-  document.getElementById("lucky_number").innerHTML = "Mã số may mắn của bạn là " + luckyNumber;
- } else {
-  document.getElementById("lucky_number").innerHTML = "Xin lỗi bạn không có trong danh sách khách mời, liên hệ ông Tống Nhật Minh 0858881398 để làm thủ tục check in";
- }
+    resultLayer.style.display = 'block';
 }
