@@ -23,3 +23,5 @@ function showPopup() {
   document.querySelector(".popup").style.display = "block";
   document.querySelector(".popup").style.zIndex = 2;
 }
+// Đặt mặc định là hiển thị layer 1
+document.querySelector(".container").style.display = "block";
