@@ -21,13 +21,8 @@ function showPopup() {
 function closePopup() {
   // Ẩn layer 2
   document.querySelector(".popup").style.display = "none";
-
-  // Hiển thị layer 1
-  document.querySelector(".container").style.display = "block";
 }
 
-// Đặt mặc định là hiển thị layer 1
-document.querySelector(".container").style.display = "block";
+// Gắn sự kiện click cho button "đóng"
+document.getElementById("close").onclick = closePopup;
 
-// Chỉnh màu chữ thành màu đen ở trong input text
-document.querySelector("#phone_number").style.color = "black";
